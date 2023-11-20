@@ -1,0 +1,180 @@
+    1  git help init
+    2  git init
+    3  git --config
+    4  git --config --list
+    5  git config --list
+    6  git config --list --global
+    7  git config user.name test
+    8* git config user.em
+    9  git config --list --local
+   10  git config --global core.editor "code --wait"
+   11  touch text1.txt
+   12  ls
+   13  pwd
+   14  ls -la
+   15  nano text1.txt
+   16  echo "Content B" > file2.txt
+   17  git status
+   18  git add file2.txt 
+   19  git status
+   20  git add .
+   21  git status
+   22  git commit -m "working locally repository"
+   23  git status
+   24  git log
+   25  git log --online
+   26  git log --oneline
+   27  git log --oneline --graph
+   28  git log --oneline --graph --all
+   29  git add file3.txt 
+   30  touch text2.txt
+   31  touch text3.txt
+   32  touch text4.txt
+   33  ls
+   34  git add file3.txt 
+   35  ls
+   36  git status
+   37  git add file2.txt 
+   38  git status
+   39  git add file2.txt 
+   40  git status
+   41  git add file2.txt 
+   42  git status
+   43  git add text2.txt 
+   44  ls
+   45  git status
+   46  git commit -m "working locally repository"
+   47  git status
+   48  git log
+   49  quit
+   50  ls
+   51  git add text3.txt 
+   52  git commit -m "my first commit"
+   53  git log
+   54  git add text4.txt 
+   55  git commit -m "my second commit"
+   56  git log
+   57  git status
+   58  git log --oneline
+   59  git log --oneline --graph
+   60  git log --raw
+   61* git add another/cha
+   62  git commit -amend -m "Bug fixed"
+   63  git commit --amend -m "Bug fixed"
+   64  git log --raw
+   65  Git branch
+   66  git -M branch main
+   67  git branch -M main
+   68  Git branch
+   69  git branch dev
+   70  git branch 
+   71  git checkout dev
+   72* git checkout -b dev
+   73  git branch 
+   74  git log --oneline --all --graph 
+   75  git checkout dev
+   76  echo "Content A" > text.5.txt
+   77  git status 
+   78  git add .
+   79  git status 
+   80  git commit -m "Test branch"
+   81  git log --oneline --all --graph 
+   82  gitk
+   83  gitk
+   84  clear
+   85  git checkout main
+   86* git checkout 
+   87  git log checkout 5c5d99f
+   88  git checkout 5c5d99f
+   89  ls
+   90  git status 
+   91  git add .
+   92  git status 
+   93  git checkout 
+   94  ls
+   95  git checkout main
+   96  ls
+   97  git status 
+   98  echo "content A" > naujas.txt
+   99  ls
+  100  git add .
+  101  git status 
+  102  echo "content A" > naujas1.txt
+  103  git status 
+  104  git add naujas1.txt
+  105  git status 
+  106  git commit -m "Commit A"
+  107  git status 
+  108  git checkout -b feature-branch
+  109  echo "Feature Content D" > file3.txt
+  110  git status 
+  111  git add .
+  112  ls
+  113  git commit -m "Commit E"
+  114  git log 
+  115  git log --oneline --graph 
+  116  ls
+  117  rm *
+  118  ls
+  119  get branch -d
+  120  git checkout main
+  121  git merge feature-branch 
+  122  rm *
+  123  ls
+  124  git branch -d dev
+  125  ls
+  126  git log --oneline --graph 
+  127  git branch 
+  128  git add "Content in main branch" > file.txt
+  129  echo "Content in branch" > file1.txt
+  130  git add file1.txt 
+  131  git status 
+  132  git commit -m "Initial commit in main branch"
+  133  git checkout -b dev
+  134  git rm dev
+  135  git status 
+  136  git log --oneline --graph 
+  137  git status 
+  138  git checkout -b dev
+  139  git checkout dev
+  140  ls
+  141  rm *
+  142  ls
+  143  git checkout main
+  144  ls
+  145  git log --oneline --graph 
+  146  echo "Updated content in main branch" > file1.txt
+  147  git add file1.txt 
+  148  git commit -m "Updated contebt in main branch"
+  149  git merge dev
+  150  ls
+  151  git log --oneline --graph 
+  152  ls
+  153  git log --oneline --graph 
+  154  clear
+  155  clear
+  156  git init 
+  157  git config user.name Ricardas007
+  158  git config user.email rychmaister@gmail.com
+  159  git config --list 
+  160  git touch text.txt
+  161  touch text.txt
+  162  git status
+  163  git add .
+  164  git commit -m "Try to push from local to upstream"
+  165  git remote add origin https://github.com/Ricardas007/fictional-succotash.git
+  166  git remote -v
+  167  git branch -M main
+  168  git push -u origin main
+  169  ls
+  170  echo "Geras failas" > save 
+  171  echo "Geras failas" > save.txt
+  172  ls
+  173  git status 
+  174  git add .
+  175  git status 
+  176  git commit -m "Naujas ir geras"
+  177  git status 
+  178  git config --list 
+  179  git log --oneline --graph 
+  180  history > histToday.txt && git add . && git commit -m "prisidekit ka siandien gero nuveiket" && git push -u origin main
